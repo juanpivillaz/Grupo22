@@ -1,0 +1,26 @@
+Queremos crear una base de datos que incluya cuatro grandes módulos, ALTA/BAJA/MODIFICACIÓN de clientes, ALTA/BAJA/MODIFICACIÓN de artículos, ALTA BAJA/MODIFICACIÓN usuarios del sistema y GESTIÓN DE VENTAS Y STOCK.
+
+En el módulo de clientes es importante que contenga nombre, apellido, DNI, dirección, correo electrónico, celular del cliente a registrar en nuestro ERP. 
+En el módulo de artículos, necesitamos que la base de datos contenga:  Código, nombre breve, descripción, costo, precio, proveedor del mismo. 
+En el módulo de usuarios necesitamos que la base de datos contenga: Nombre, apellido, DNI, dirección, correo electrónico, celular, nivel de usuario.
+
+A continuación, se describen los procesos de negocio que se deberían tener en cuenta a la hora de crear la base de datos:
+
+Alta de un nuevo cliente:  1.  El cliente desea registrarse en el sitio de e-commerce. 2. Recopilar información del cliente. 3. Información del cliente recopilada. 4. Registrar nuevo cliente. 5. Almacenar datos del cliente en la BD.
+Baja de un cliente existente: 1. Se desea dar de baja el cliente. 2. Eliminar cliente de la BD. 3. Cliente dado de baja.
+Modificación de un cliente existente: 1. Se desea modificar los datos del cliente. 2. Modificar datos del cliente de la BD. 3. Cliente modificado en la BD.
+
+Alta de un nuevo artículo: 1.  Se debe dar de alta un artículo . 2. Ingresar información del artículo . 3. Artículo agregado a la BD.
+Baja de un artículo existente: 1. Se desea dar de baja un artículo de la BD. 2..  Eliminar artículo de la BD. 3. Artículo dado de baja en la BD.
+Modificación de un artículo existente: 1. Se desea modificar los datos de un artículo en la BD.  2. Modificar los datos del artículo en la BD (Código, nombre breve, descripción, costo, precio, proveedor). 3. Artículo actualizado en la BD.
+
+Alta de un nuevo usuario: 1. Se desea dar de alta un nuevo usuario. 2. Recopilar información necesaria de usuario (Nombre, apellido, DNI, dirección, correo electrónico, celular, nivel de usuario). 3.Información del usuario recopilada.  4. Registrar nuevo usuario en la BD. 5. Nuevo usuario registrado.
+Baja de un usuario existente: 1.Se desea dar de baja un usuario existente. 2.Consultar información del usuario a dar de baja (nombre, apellido, DNI, dirección, correo electrónico, celular, nivel de usuario). 4. Información del usuario consultada / ingresada. 5. Eliminar usuario existente. 6.Usuario eliminado correctamente
+Modificar datos de usuario: 1. Se desea modificar los datos del usuario. 2. Modificar datos del usuario de la BD. 3. Usuario modificado en la BD.
+
+Gestión de ventas y stock: 1. Se recibe una orden de pedido. 2. Validar datos de la orden y del cliente. 3. Datos de la orden y del cliente validados. 4. Verificar la disponibilidad del artículo de la orden de pedido. 
+Luego del 4, se tienen dos caminos posibles: 4.1. Artículo en existencias. 4.2. No hay existencias disponibles del artículo.
+4.1.1. Artículo en existencias. 4.1.2. Aceptar orden y actualizar stock. 4.1.3. Orden aceptada y stock actualizado. 4.1.4. Notificar al depósito para comenzar “picking” de la orden de pedido. 4.1.5. Notificación emitida. 4.1.6. Realizar “picking” del artículo de la orden de pedido. 4.1.7. Picking realizado. 4.1.8. Despachar orden de pedido y notificar al cliente por email. 4.1.8.1. Orden de pedido despachada. 4.1.8.2. Cliente notificado a través de email. 4.1.9. Cerrar orden. 4.1.10. Orden cerrada.
+
+Además, queremos que nos agregues una tabla indicando las categorías de productos, que tenga los campos id_categoria y nombre_categoría. Además, agrega registros a esta tabla que sean: 1, Linea Estandar; 2, Linea Media; 3, Linea Premium.
+Este campo id_categoria debe estar referenciado en la tabla de articulos.
